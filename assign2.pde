@@ -65,7 +65,6 @@ void draw() {
     case GAME_START:
       image(start2Img, 0, 0);    
       if (mouseX > 210 && mouseX < 450 && mouseY > 370 && mouseY < 410){
-        //click
         if (mousePressed){
           gameState = GAME_RUN;
         }else{
