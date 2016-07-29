@@ -165,7 +165,7 @@ void draw() {
           hp -= hpDamage;
           enemyX = 0;
           enemyY = floor(random(35,410));  
-          if(hp <= 0){
+          if(hp < 1){
             gameState = GAME_END;
           }
         }
