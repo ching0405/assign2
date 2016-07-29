@@ -89,7 +89,7 @@ void draw() {
       
       //hp
       fill(255,0,0); 
-      rect(13,3,hpFull,17);  
+      rect(13,3,hp,17);  
       noStroke();      
       image(hpImg,0,0);
       
