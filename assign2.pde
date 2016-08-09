@@ -85,13 +85,7 @@ void draw() {
         bg2Move *= -1;
       }
       image(bg2Img,bg2Move,0);  
-      
-      //hp
-      fill(255,0,0); 
-      rect(13,3,hp,17);  
-      noStroke();      
-      image(hpImg,0,0);
-      
+
       //fighter move
       image(fighterImg, fighterX, fighterY);  
       if (upPressed) {
@@ -157,6 +151,12 @@ void draw() {
       if(enemyY < 0){
         enemyY = height;
       }      
+            
+      //hp
+      fill(255,0,0); 
+      rect(13,3,hp,17);  
+      noStroke();      
+      image(hpImg,0,0);
       
       //game end
       if(fighterX+50 >= enemyX && fighterX <= enemyX+30){
